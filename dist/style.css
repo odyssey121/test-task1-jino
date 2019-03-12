@@ -554,9 +554,16 @@ h1 {
   padding: 0px;
   margin: 0px; }
 
+header {
+  width: 100%;
+  background: url("../background1.jpg"); }
+
 .wrapper {
   background: url("../background1.jpg");
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-size: cover;
+  height: 843px;
+  width: 100%; }
 
 .container {
   margin: 0px auto;
@@ -634,5 +641,44 @@ h1 {
 .line-svg {
   text-align: center; }
 
+.explanation-note {
+  position: relative;
+  height: 125px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #afafb0;
+  padding: 30px 55px 46px 44px;
+  background: #f7f7f7; }
+  .explanation-note::before, .explanation-note::after {
+    content: '';
+    position: absolute;
+    left: 115px;
+    top: -41px;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #afafb0; }
+  .explanation-note::after {
+    border-bottom: 20px solid #f7f7f7;
+    top: -39px; }
+
 .headline {
   padding: 0px 33px; }
+
+.fotter-area .super-djino, .fotter-area .what-djino {
+  text-align: center; }
+
+.fotter-area .thousand {
+  width: 100%;
+  height: 110px;
+  padding: 30px 60px 30px 40px;
+  border-radius: 5px;
+  background: #df4a5e;
+  color: white;
+  line-height: 22px; }
+  .fotter-area .thousand #plus {
+    border-bottom: 1px solid #fff; }
+  .fotter-area .thousand span {
+    font-weight: 800; }
+  .fotter-area .thousand .sotka {
+    float: right;
+    font-size: 50px;
+    line-height: 0px; }

@@ -11,9 +11,16 @@ h1{
     padding:0px;
     margin:0px;
 }
+header{
+    width:100%;
+    background:url("../background1.jpg");
+}
 .wrapper{
     background:url("../background1.jpg");
     background-attachment: fixed;
+    background-size: cover;
+    height:843px;
+    width:100%;
 }
 .container{
     margin:0px auto;
@@ -101,6 +108,8 @@ h1{
     }
 }
 
+
+// SECTION 1 MAIN  ======= SECTION 1 MAIN  ======= SECTION 1 MAIN  ======= 
 .under-svg-text{
     text-align: center;
 }
@@ -108,8 +117,29 @@ h1{
     text-align: center;
 }
 
+.explanation-note{
+    position:relative;
+    height: 125px;
+    width: 100%;
+    border-radius: 10px;
+    border:1px solid #afafb0;
+    padding:30px 55px 46px 44px;
+    background: #f7f7f7;
+    &::before,&::after{
+        content: ''; 
+        position: absolute;
+        left: 115px; top: -41px;
+        border: 20px solid transparent;
+        border-bottom: 20px solid #afafb0;
+        
+    }
+    &::after{
+        border-bottom: 20px solid #f7f7f7;
+        top: -39px; 
+    }
 
-// SECTION 1 MAIN  ======= SECTION 1 MAIN  ======= SECTION 1 MAIN  ======= 
+}
+
 
 
 .headline{
@@ -117,8 +147,38 @@ h1{
 }
 
 
+// FOOTER-AREA-1000+   FOOTER-AREA-1000+   FOOTER-AREA-1000+   FOOTER-AREA-1000+   FOOTER-AREA-1000+   
+.fotter-area{
+    .super-djino ,.what-djino{
+        text-align: center;
+        
+    }
+    .thousand{
+        width: 100%;
+        height: 110px;
+        padding:30px 60px 30px 40px;
+        border-radius: 5px;
+        background:#df4a5e;
+        color:white;
+        line-height: 22px;
+        
+        #plus{
+            border-bottom: 1px solid #fff;
+        }
+        span{
+            font-weight: 800;
+            
+        }
+        .sotka{
+            float: right;
+            font-size: 50px;
+            line-height: 0px;
 
-
+            
+        }
+        
+    }
+}
 
 
 
