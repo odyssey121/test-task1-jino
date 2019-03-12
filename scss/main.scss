@@ -11,8 +11,9 @@ h1{
     padding:0px;
     margin:0px;
 }
-header{
+.wrapper{
     background:url("../background1.jpg");
+    background-attachment: fixed;
 }
 .container{
     margin:0px auto;
@@ -22,9 +23,18 @@ header{
 .no-gap{
     grid-gap: 0px !important ;
 }
-.grid{
+.grid-container{
     margin:0 auto;
     max-width: 1092px;
+    min-width: 819px;
+    display:grid;
+    grid-template-columns:repeat(12 , 80px);
+    // grid-auto-columns: minmax(60px, 80px);
+    grid-gap: 12px; 
+}
+.grid{
+    margin:0 auto;
+    // max-width: 1092px;
     // min-width: 819px;
     display:grid;
     
@@ -91,19 +101,21 @@ header{
     }
 }
 
-.down-picture{
+.under-svg-text{
+    text-align: center;
+}
+.line-svg{
     text-align: center;
 }
 
 
+// SECTION 1 MAIN  ======= SECTION 1 MAIN  ======= SECTION 1 MAIN  ======= 
 
 
-
-.test{
-    grid-column: 1/3;
-    grid-column: 1/3;
-    grid-column-start: 2;
+.headline{
+    padding:0px 33px;
 }
+
 
 
 
