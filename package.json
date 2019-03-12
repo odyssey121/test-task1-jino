@@ -1,0 +1,17 @@
+{
+  "name": "task1-domains",
+  "version": "1.0.0",
+  "description": "Необходимо сверстать промо-страницу по макету.",
+  "main": "index.js",
+  "dependencies": {
+    "fast-grid": "^0.2.5",
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass scss/main.scss dist/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
