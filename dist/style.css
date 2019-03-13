@@ -1090,21 +1090,81 @@
 .col-13 {
   grid-column: 1 / 14; }
 
-@media screen and (max-width: 500px) {
-  .wrapper {
-    width: 900px; } }
-
-@media screen and (max-width: 859px) and (min-width: 501px) {
+@media screen and (min-width: 819px) and (max-width: 1091px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 9px; } }
+    grid-gap: 12px;
+    grid-auto-columns: minmax(60px, 80px); }
+  .what-djino, .super-djino {
+    font-size: 1.2em; }
+  .thousand {
+    font-size: 1em; }
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1092px;
+    min-width: 819px;
+    width: 90%; }
+  .headline-1, .headline-2 {
+    font-size: 1.8em; }
+  .explanation-note::before, .explanation-note::after {
+    content: '';
+    position: absolute;
+    left: 90px;
+    top: -41px;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #afafb0; } }
 
-@media screen and (min-width: 820px) and (max-width: 1107px) {
+@media screen and (min-width: 1092px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(12, 80px);
-    grid-gap: 12px; } }
+    grid-gap: 12px; }
+  .what-djino, .super-djino {
+    font-size: 1.4em; }
+  .thousand {
+    font-size: 1.2em; }
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1092px;
+    min-width: 819px;
+    width: 90%; }
+  .headline-1, .headline-2 {
+    font-size: 2em; }
+  .explanation-note::before, .explanation-note::after {
+    content: '';
+    position: absolute;
+    left: 115px;
+    top: -41px;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #afafb0; } }
+
+@media screen and (max-width: 879px) and (min-width: 501px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 9px; }
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: auto; }
+  .headline-1, .headline-2 {
+    font-size: 1.5em; }
+  .copy-right {
+    font-size: 0.8em; }
+  .thousand {
+    font-size: 0.8em; }
+  .explanation-note {
+    font-size: 0.8em; }
+  .explanation-note::before, .explanation-note::after {
+    content: '';
+    position: absolute;
+    left: 65px;
+    top: -41px;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #afafb0; } }
 
 * {
   box-sizing: border-box; }
@@ -1119,13 +1179,6 @@ body {
 h1 {
   padding: 0px;
   margin: 0px; }
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1092px;
-  min-width: 819px;
-  width: 90%; }
 
 .header-top {
   padding-top: 25px;
@@ -1147,8 +1200,7 @@ h1 {
   .bg-header .headline-1, .bg-header .headline-2 {
     text-align: center;
     font-weight: 700;
-    font-stretch: ultra-expanded;
-    font-size: 2em; }
+    font-stretch: ultra-expanded; }
   .bg-header .check-domain {
     margin-top: 60px;
     position: relative;
@@ -1177,6 +1229,7 @@ h1 {
       background: #5f6062;
       color: #fff; }
   .bg-header .free-register {
+    line-height: 45px;
     background-color: #32373e;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -1199,7 +1252,8 @@ h1 {
     padding: 0px 35px;
     font-size: 33px;
     font-weight: 700;
-    padding-bottom: 70px; }
+    padding-bottom: 70px;
+    text-align: center; }
   #main .under-svg-text {
     text-align: center;
     padding-bottom: 35px; }
@@ -1219,13 +1273,6 @@ h1 {
     border: 1px solid #afafb0;
     padding: 30px 55px 46px 44px;
     background: #f7f7f7; }
-    #main .explanation-note::before, #main .explanation-note::after {
-      content: '';
-      position: absolute;
-      left: 115px;
-      top: -41px;
-      border: 20px solid transparent;
-      border-bottom: 20px solid #afafb0; }
     #main .explanation-note::after {
       border-bottom: 20px solid #f7f7f7;
       top: -39px; }
@@ -1247,12 +1294,10 @@ h1 {
   background-size: cover;
   color: #fff; }
   .bg-footer .what-djino {
-    font-size: 25px;
     font-weight: 700;
     text-align: center;
     padding-bottom: 30px; }
   .bg-footer .super-djino {
-    font-size: 25px;
     font-weight: 700;
     text-align: center; }
   .bg-footer .header-footer {
@@ -1274,10 +1319,7 @@ h1 {
     padding: 30px 60px 30px 40px;
     border-radius: 5px;
     background: #df4a5e;
-    color: white;
-    line-height: 22px;
-    font-size: 22px;
-    line-height: 1.2; }
+    color: white; }
     .bg-footer .thousand #plus {
       border-bottom: 1px solid #fff; }
     .bg-footer .thousand span {
@@ -1301,3 +1343,9 @@ h1 {
         vertical-align: middle;
         position: absolute;
         padding-left: 3px; }
+  .bg-footer .copy-right {
+    text-align: center;
+    color: #b2ccee;
+    padding: 50px 0px; }
+    .bg-footer .copy-right span {
+      border-bottom: 1px solid #aec6e8; }

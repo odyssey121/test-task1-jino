@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-sc.0">
+    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="./style.css">
@@ -37,16 +37,18 @@
             </div>
             <div class="grid">
                 <div class="start-3_to-11 check-domain">
-                    <input id="header-input" type="text" placeholder="example.ru">
-                    <input id="check" type="text" type="button" value="Проверить">
+                    <form id="check-domain-form">
+                        <input id="header-input" type="text" placeholder="example.ru">
+                        <input id="check" type="button" value="Проверить">
+                    </form>
                 </div>
             </div>
             <div class="grid check-domain-bottom">
                 <div class="start-3_to-11 free-register">
-                    <P>
-                        Домен example.ru - свободен.
+                    <span id="output-info">
+                        Домен example.ru - свободен.</span>
                         <a id="register-ref" href="#">Зарегистрировать за 39Р</a>
-                    </P>
+                    
                 </div>
             </div>
             <div class="grid">
@@ -183,9 +185,7 @@
                     простую страницу-визитку. Это удобно,
                     если ваш основной сайт еще не готов, или если домен вам нужен только для почты. Вы можете разместить
                     здесь краткую информацию о себе
-                    или вашем бизнесе, ссылки на аккаунты в соцсетях и любые другие сайты. Создание и поддержка базового
-                    варианта сайта-визитки абсолютно
-                    бесплатны.
+                    или вашем бизнесе, ссылки на аккаунты в соцсетях и любые другие сайты.
                 </div>
             </div>
 
@@ -368,7 +368,7 @@
                     © «Джино», 2003–2017. «Джино» является зарегистрированным товарным знаком. Лицензия на
                     телематические
                     услуги
-                    связи № 97495 от 09.03.2012. Правовая информация.
+                    связи № 97495 от 09.03.2012. <span>Правовая информация.</span>
                 </div>
             </div>
         </div>
@@ -376,7 +376,7 @@
 
 
 
-
+<script src='script.js'></script>
 </body>
 
 </html>

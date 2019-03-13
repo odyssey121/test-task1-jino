@@ -16,14 +16,15 @@ h1{
     margin:0px;
 }
 
+// .grid{
+//     display:grid;
+//     grid-template-columns:repeat(12 , 1fr);
+//     grid-gap: 12px;
+//     grid-auto-columns: minmax(60px,80px);
+// }
 
-.container{
-    margin-right: auto;
-    margin-left:auto;
-    max-width: 1092px;
-    min-width:819px;
-    width:90%;   
-}
+
+
 
 // LOGO TOP  ====== LOGO TOP 
 .header-top{
@@ -52,7 +53,7 @@ h1{
         text-align:center;
         @include Bold;
         font-stretch: ultra-expanded;
-        font-size:2em;  
+         
     }
     .check-domain{
         margin-top:60px;
@@ -88,6 +89,7 @@ h1{
         }
     }
     .free-register{
+        line-height: 45px;
         background-color:#32373e;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -119,6 +121,7 @@ h1{
         font-size:33px;
         @include Bold;
         padding-bottom:70px;
+        text-align: center;
         
     }
     .under-svg-text{
@@ -144,14 +147,7 @@ h1{
         border:1px solid #afafb0;
         padding:30px 55px 46px 44px;
         background: #f7f7f7;
-        &::before,&::after{
-            content: ''; 
-            position: absolute;
-            left: 115px; top: -41px;
-            border: 20px solid transparent;
-            border-bottom: 20px solid #afafb0;
-            
-        }
+        
         &::after{
             border-bottom: 20px solid #f7f7f7;
             top: -39px; 
@@ -180,14 +176,14 @@ h1{
     background-size: cover;
     color: #fff;
     .what-djino{
-        font-size:25px;
+        
         @include Bold;
         text-align: center;
         padding-bottom:30px;
     }
 
     .super-djino{
-        font-size:25px;
+        
         @include Bold;
         text-align: center;
         
@@ -218,9 +214,9 @@ h1{
         border-radius: 5px;
         background:#df4a5e;
         color:white;
-        line-height: 22px;
-        font-size:22px;
-        line-height: 1.2;
+        
+        
+        
         
         #plus{
             border-bottom: 1px solid #fff;
@@ -254,6 +250,15 @@ h1{
                     
                 }   
         }   
+    }
+    .copy-right{
+        text-align: center;
+        color:#b2ccee;
+        padding: 50px 0px; 
+        span{
+            border-bottom: 1px solid #aec6e8;
+            
+        }
     }
 }
 

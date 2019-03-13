@@ -20,25 +20,25 @@ $SVG-PLUS:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="
 }
 
 @mixin mediaSm {
-    @media screen and (max-width:500px){
+    @media screen and (max-width:655px)and(min-width:200px){
         @content;
     }
 }
 
 @mixin mediaMd {
-    @media screen and (max-width:859px) and (min-width: 501px){
+    @media screen and (max-width:879px) and (min-width: 501px){
         @content;
     }
 }
 
 @mixin mediaLg {
-    @media screen and (min-width:820px) and (max-width:1107px){
+    @media screen and (min-width:819px) and (max-width:1091px){
         @content;
     }
 }
 
 @mixin mediaXl {
-    @media screen and (min-width:1108px){
+    @media screen and (min-width:1092px){
         @content;
     }
 }
