@@ -1,0 +1,26 @@
+@import 'config';
+
+@include mediaSm{
+    .wrapper{
+        width:900px;
+    }
+}
+
+@include mediaMd{
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(12 , 1fr);
+        grid-gap: 9px;
+    }
+    
+}
+
+@include mediaLg{
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(12 , 80px);
+        grid-gap: 12px;
+    }
+}
+
+
