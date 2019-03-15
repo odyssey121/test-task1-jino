@@ -1,19 +1,19 @@
 @import 'config';
 @import 'media';
-
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    margin:0px;
+
+body {
+    margin: 0px;
     @include PTSansStandart;
-    width:100%;
-    overflow-x:hidden;
-    
+    width: 100%;
+    overflow-x: hidden;
 }
-h1{
-    padding:0px;
-    margin:0px;
+
+h1 {
+    padding: 0px;
+    margin: 0px;
 }
 
 // .grid{
@@ -22,246 +22,182 @@ h1{
 //     grid-gap: 12px;
 //     grid-auto-columns: minmax(60px,80px);
 // }
-
-
-
-
 // LOGO TOP  ====== LOGO TOP 
-.header-top{
-    padding-top:25px;
-    padding-bottom:120px;
-    font-size:13px;
+.header-top {
+    padding-top: 25px;
+    padding-bottom: 120px;
+    font-size: 13px;
     @include Bold;
-    .top-left{
-        &::before{
-            content:url("data:image/svg+xml; utf8, #{$SVG-LOGO}");
-            display:inline-block;
-            vertical-align: sub;  
-            padding-right: 5px;     
+    .top-left {
+        &::before {
+            content: url("data:image/svg+xml; utf8, #{$SVG-LOGO}");
+            display: inline-block;
+            vertical-align: sub;
+            padding-right: 5px;
         }
     }
 }
+
 // HEADER === HEADER === HEADER
-.bg-header{
-    background:url("../background1.jpg");
+.bg-header {
+    background: url("../background1.jpg");
     background-attachment: local;
-    background-size:cover;
+    background-size: cover;
     height: 843px;
     color: #fff;
-    
-    .headline-1,.headline-2{
-        text-align:center;
+    .headline-1,
+    .headline-2 {
+        text-align: center;
         @include Bold;
         font-stretch: ultra-expanded;
-         
     }
-    .check-domain{
-        margin-top:60px;
+    .check-domain {
+        margin-top: 60px;
         position: relative;
-        top:5px;
-        z-index:100;
-        #header-input{
-
-            font-size:22px;
+        top: 5px;
+        z-index: 100;
+        #header-input {
+            font-size: 22px;
             width: 100%;
             border-radius: 10px;
-            border:none;
-            background:#ffff;
+            border: none;
+            background: #ffff;
             height: 80px;
-            &::-webkit-input-placeholder{
-                color:black;
-                        
+            &::-webkit-input-placeholder {
+                color: black;
             }
-            padding-left:36px;    
-        }
-        #check{
-            cursor: pointer;
-            position: absolute;
-            top:14px;
-            right: 15px;
-            border-radius: 10px;
-            border:none;
-            width:156px;
-            height: 50px;
-            text-align: center;
-            background: #5f6062;
-            color:#fff;       
+            padding-left:36px;
         }
     }
-    .free-register{
+    .free-register {
         line-height: 45px;
-        background-color:#32373e;
+        background-color: #32373e;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        text-align:center;
+        text-align: center;
         height: 45px;
         opacity: 0.8;
-        & a{
-            color:green;
-            padding-left:5px;
-        }    
+        & a {
+            color: green;
+            padding-left: 5px;
+        }
     }
-    .check-domain-bottom{
-        padding-bottom:35px;
+    .check-domain-bottom {
+        padding-bottom: 35px;
     }
-    .down-picture{
-        text-align:center;
-        margin-top:135px;
-        
+    .down-picture {
+        text-align: center;
+        margin-top: 135px;
     }
 }
-    
-// SECTION MAIN ======SECTION MAIN ======SECTION MAIN ======
 
-#main{
-    font-size:16px;
-    color:#333333;
-    .headline{
-        padding:0px 35px;
-        font-size:33px;
+// SECTION MAIN ======SECTION MAIN ======SECTION MAIN ======
+#main {
+    font-size: 16px;
+    color: #333333;
+    .headline {
+        padding: 0px 35px;
+        font-size: 33px;
         @include Bold;
-        padding-bottom:70px;
+        padding-bottom: 70px;
         text-align: center;
-        
     }
-    .under-svg-text{
+    .under-svg-text {
         text-align: center;
         padding-bottom: 35px;
     }
-    .line-svg{
+    .line-svg {
         text-align: center;
-        padding-bottom:23px;
+        padding-bottom: 23px;
     }
-    .note{
+    .note {
         padding-bottom: 33px;
     }
-    .btn-green{
-        margin-top:30px;
-        padding-bottom:70px;
+    .btn-green {
+        margin-top: 30px;
+        padding-bottom: 70px;
     }
-    .explanation-note{
-        position:relative;
-        height: 125px;
+    .explanation-note {
+        position: relative;
         width: 100%;
         border-radius: 10px;
-        border:1px solid #afafb0;
-        padding:30px 55px 46px 44px;
+        border: 1px solid #afafb0;
+        padding: 30px 55px 46px 44px;
         background: #f7f7f7;
-        
-        &::after{
+        &::after {
             border-bottom: 20px solid #f7f7f7;
-            top: -39px; 
+            top: -39px;
         }
-    
-    }  
+    }
 }
-     
-.btn-create-area{
-    padding:0px 45px;
-    #btn-create{
+
+.btn-create-area {
+    #btn-create {
         width: 100%;
-        background-color:#77b53c;
+        background-color: #77b53c;
         border-radius: 10px;
-        border:none;
-        cursor:pointer;
-        color:#fff;
+        border: none;
+        cursor: pointer;
+        color: #fff;
         height: 54px;
     }
 }
 
 // FOOTER-AREA-1000+   FOOTER-AREA-1000+   FOOTER-AREA-1000+   FOOTER-AREA-1000+   FOOTER-AREA-1000+   
-.bg-footer{
-    background:url("../background2.jpg");
+.bg-footer {
+    background: url("../background2.jpg");
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
-    .what-djino{
-        
+    .what-djino {
         @include Bold;
         text-align: center;
-        padding-bottom:30px;
+        padding-bottom: 30px;
     }
-
-    .super-djino{
-        
+    .super-djino {
         @include Bold;
         text-align: center;
-        
     }
-
-    .header-footer{
-        padding-top:25px;
-        padding-bottom:60px;
-        font-size:13px;
+    .header-footer {
+        padding-top: 25px;
+        padding-bottom: 60px;
+        font-size: 13px;
         @include Bold;
-        .top-left{
-            &::before{
-                content:url("data:image/svg+xml; utf8, #{$SVG-LOGO}");
-                display:inline-block;
-                vertical-align: sub;  
-                padding-right: 5px;     
+        .top-left {
+            &::before {
+                content: url("data:image/svg+xml; utf8, #{$SVG-LOGO}");
+                display: inline-block;
+                vertical-align: sub;
+                padding-right: 5px;
             }
         }
     }
-    .footer-create{
-        margin-top:50px;
-        margin-bottom::50px;
+    .footer-create {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
-    .thousand{
+    .thousand {
         width: 100%;
-        height: 110px;
-        padding:30px 60px 30px 40px;
         border-radius: 5px;
-        background:#df4a5e;
-        color:white;
-        
-        
-        
-        
-        #plus{
+        background: #df4a5e;
+        color: white;
+        display: flex;
+        #plus {
             border-bottom: 1px solid #fff;
         }
-        span{
+        span {
             font-weight: 800;
-            
         }
-        .sotka{
+        .sotka {
             position: relative;
-            float: right;
-            font-size: 50px;
-            line-height: 0px;
-            &::before{
-                content:"|";
-                display:inline-block;
-                vertical-align:middle;  
-                opacity:0.5;
-                position: absolute;
-                left: -40px;
-                top:-1px;
-                
-            }
-
-            &::after{
-                content:"+";
-                display:inline-block;
-                vertical-align: middle;  
-                position: absolute;
-                padding-left: 3px;
-                    
-                }   
-        }   
+        }
     }
-    .copy-right{
+    .copy-right {
         text-align: center;
-        color:#b2ccee;
-        padding: 50px 0px; 
-        span{
+        color: #b2ccee;
+        padding: 50px 0px;
+        span {
             border-bottom: 1px solid #aec6e8;
-            
         }
     }
 }
-
-
-
-
